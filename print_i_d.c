@@ -6,7 +6,7 @@
 /*   By: cduffaut <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:32:23 by cduffaut          #+#    #+#             */
-/*   Updated: 2023/10/13 17:54:29 by csil             ###   ########.fr       */
+/*   Updated: 2023/10/14 18:08:35 by cduffaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ int	ft_putnbr(int n)
 	int		len;
 
 	len = len_nbr(n);
-	temp = n + 48;
 	if (n == -2147483648)
 	{
 		write (1, "-2147483648", 11);
@@ -50,8 +49,9 @@ int	ft_putnbr(int n)
 	if (n < 0)
 	{
 		write (1, "-", 1);
-		n *= -1;
+		n = -n;
 	}
+	temp = (n + 48);
 	if (n < 10)
 		write (1, &temp, 1);
 	else

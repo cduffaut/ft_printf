@@ -6,7 +6,7 @@
 /*   By: cduffaut <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:31:34 by cduffaut          #+#    #+#             */
-/*   Updated: 2023/10/13 17:52:04 by csil             ###   ########.fr       */
+/*   Updated: 2023/10/14 18:08:56 by cduffaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	prct_case(const char *str, va_list stock, int i)
 	else if (str[i + 1] == 'p')
 		count += print_p(va_arg(stock, unsigned long long));
 	else if (str[i + 1] == 'd' || str[i + 1] == 'i')
-		count += ft_putnbr(va_arg(stock, int));
+		count += ft_putnbr((int)va_arg(stock, int));
 	else if (str[i + 1] == 'u')
 		count += print_u(va_arg(stock, unsigned int));
 	else if (str[i + 1] == 'x')
@@ -65,6 +65,19 @@ int	ft_printf(const char *str, ...)
 	va_end(stock);
 	return (count);
 }
+/*
+int	main(void)
+{
+	int	count;
+
+	count = ft_printf(" %d ", -1);
+	ft_printf("\n%d\n", count);
+	
+	count = printf(" %i ", -1);
+	printf("\n%d\n", count);
+	return (0);
+}*/
+
 /*
 int	main(void)
 {
