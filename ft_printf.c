@@ -6,14 +6,12 @@
 /*   By: cduffaut <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:31:34 by cduffaut          #+#    #+#             */
-/*   Updated: 2023/10/14 18:08:56 by cduffaut         ###   ########.fr       */
+/*   Updated: 2023/10/16 00:21:40 by csil             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "ft_printf.h"
-
-/* dois-je gérer les %_valeur_non_géré_par_printf ? si non que faire ? */
 
 int	prct_case(const char *str, va_list stock, int i)
 {

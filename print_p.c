@@ -6,20 +6,12 @@
 /*   By: cduffaut <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:32:45 by cduffaut          #+#    #+#             */
-/*   Updated: 2023/10/13 17:54:39 by csil             ###   ########.fr       */
+/*   Updated: 2023/10/16 00:22:50 by csil             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "ft_printf.h"
-
-/*
-	%p == 0x"%x" 
-	==> Fonctionne comme print_s "0x" + print_hexa(nbr)
-
-	==> Si long long - accueil les valeurs neg ?
-	Et donc mauvaise gestion ? -> Foutre en unsigned long long ?
-*/
 
 int	print_hexa_p(unsigned long long nbr, int format)
 {

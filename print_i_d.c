@@ -6,14 +6,12 @@
 /*   By: cduffaut <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:32:23 by cduffaut          #+#    #+#             */
-/*   Updated: 2023/10/14 18:08:35 by cduffaut         ###   ########.fr       */
+/*   Updated: 2023/10/16 00:22:28 by csil             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "ft_printf.h"
-
-/* attention cas spé 0 */
 
 int	len_nbr(int nbr)
 {
